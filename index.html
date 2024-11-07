@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Cung cấp các công cụ miễn phí như kiểm tra imei nhà mạng Nhật Bản, kiểm tra Lock, Convert MEID to IMEI">
+  <meta name="keywords"
+    content="imeichecking, japan carrier imei checking, kiểm tra imei nhà mạng, check lock, kiểm tra quốc tế">
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
+  <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/favicons/ms-icon-144x144.png"><!-- PWA primary color-->
+  <meta name="theme-color" content="#2196f3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Facebook-->
+  <meta property="author" content="dtcenter">
+  <meta property="og:site_name" content="dtcenter.net">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:type" content="website">
+  <!-- Twitter-->
+  <meta property="twitter:site" content="dtcenter.net">
+  <meta property="twitter:domain" content="dtcenter.net">
+  <meta property="twitter:creator" content="dtcenter">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:image:src" content="./assets/images/logo-saas2.png">
+  <meta property="og:url" content="dtcenter.net">
+  <meta property="og:title" content="Software">
+  <meta property="og:description"
+    content="Cung cấp các công cụ miễn phí như kiểm tra imei nhà mạng Nhật Bản, kiểm tra Lock, Convert MEID to IMEI">
+  <meta name="twitter:site" content="dtcenter.net">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/images/logo-saas2.png">
+  <meta property="og:image" content="/images/logo-saas2.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <title>DTCenter - Trang web công cụ đỉnh cao miễn phí!</title>
+  <!-- Styles-->
+  <!-- Put the 3rd/plugins css here-->
+  <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
+  <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vendors/magnific-popup.css" rel="stylesheet">
+  <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
+  <link href="./assets/css/vendors/hamburger-menu.css" rel="stylesheet">
+  <link href="./assets/css/vendors/animate.css" rel="stylesheet">
+  <link href="./assets/css/vendors/animate-extends.css" rel="stylesheet">
+  <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
+  <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
+  <link href="./assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img
+      style="opacity: 0.2; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)"
+      src="./assets/images/loading.gif" alt="loading"></div>
+  <div class="m-application theme--light transition-page" id="app">
+    <div class="loading"></div>
+    <div class="m-content mint mint-var" id="main-wrap">
+      <div id="contact-page">
+        <div class="main-wrap">
+          <!-- #### HEADER ####-->
+          <div class="sidenav mobile-nav" id="slide_menu">
+            <div class="side-multilv">
+              <div class="collection side-multilv">
+                <ul class="collapsible expandable">
+                  <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="/checkimei">Kiểm tra
+                      Mạng</a></li>
+                  <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="/checkfmi">Kiểm tra
+                      tìm iPhone</a></li>
+
+                  <li class="collection-item group-child has-child">
+                    <div class="collapsible-header">
+                      <a class="waves-effect text-truncate menu-list" href="#!">
+                        Dịch vụ khác
+                        <i class="material-icons right">keyboard_arrow_down</i>
+                      </a>
+                    </div>
+                    <div class="collapsible-body">
+                      <div class="collection side-group">
+                        <ul class="group-child">
+                          <li class="collection-header">
+                            <div class="title-mega">Kiểm tra qua IMEI</div>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/checkimei">Kiểm tra Mạng</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/checksamsung">Kiểm tra IMEI
+                              Samsung</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/checkfmi">Kiểm tra tìm iPhone
+                              (S1)</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/checkfmi2">Kiểm tra tìm iPhone
+                              (S2)</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/checklock">Kiểm tra lock/ Quốc tế</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/meidtoimei">MEID sang IMEI</a>
+                          </li>
+                        </ul>
+                        <ul class="group-child">
+                          <li class="collection-header">
+                            <div class="title-mega">Cấu hình SIM</div>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/apn">Cấu hình APN</a>
+                          </li>
+                        </ul>
+                        <ul class="group-child">
+                          <li class="collection-header">
+                            <div class="title-mega">Khác</div>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/zip-code">Mã Bưu Điện</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/trackingJP">Kiểm tra mã vận chuyển
+                              JP</a>
+                          </li>
+                          <li class="collection-item side-group-link">
+                            <a class="waves-effect text-truncate menu-list" href="/hz">Tần số quét màn hình</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="collection">
+                <ul>
+                  <li class="collection-item">
+                    <a class="sidenav-close waves-effect menu-list" href="/login">Đăng Nhập</a>
+                  </li>
+                  <li class="collection-item">
+                    <a class="sidenav-close waves-effect menu-list" href="/register">Đăng Ký</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <header class="app-bar header" id="header">
+            <div class="hero-animation">
+              <img class="object-swinging" src="./assets/images/monkey.png" alt="image">
+            </div>
+            <div class="container">
+              <div class="header-content">
+                <nav class="nav-menu">
+                  <button class="btn-icon waves-effect sidenav-trigger hamburger hamburger--spin show-md-down"
+                    id="mobile_menu" type="button" data-target="slide_menu"><span class="hamburger-box"><span
+                        class="bar hamburger-inner"></span></span></button>
+                  <div class="logo">
+                    <a href="index.html">
+                      <span class="logo-main landscape medium"><img src="./assets/images/logo-saas2.png"
+                          alt="logo" />DTCenter</span>
+                    </a>
+                  </div>
+                  <div class="scrollactive-nav show-lg-up multi-menu">
+                    <ul class="main-menu">
+                      <li>
+                        <a class="btn btn-flat anchor-link waves-effect" href="/checkimei">Kiểm tra mạng</a>
+                      </li>
+                      <li>
+                        <a class="btn btn-flat anchor-link waves-effect" href="/checkfmi">Kiểm tra FMi</a>
+                      </li>
+                      <li>
+                        <button class="btn btn-flat megamenu-trigger-click waves-effect" data-target="sample-page">
+                          Dịch vụ khác
+                          <i class="material-icons right icon">keyboard_arrow_down</i>
+                        </button>
+                        <div class="mega-menu-root dropdown-content" id="sample-page">
+                          <div class="mega-menu">
+                            <div class="container max-md">
+                              <div class="row">
+                                <div class="col-sm-3 mb-6">
+                                  <div class="title-mega">Kiểm tra qua IMEI</div>
+                                  <img class="thumb-menu" src="./assets/images/saas2/menu_marketing@2x.jpg"
+                                    alt="thumbnail" />
+                                  <ul>
+                                    <li class="waves-effect"><a class="menu-list" href="/checkimei">Kiểm tra Mạng</a>
+                                    </li>
+                                    <li class="waves-effect"><a class="menu-list" href="/checksamsung">Kiểm tra IMEI
+                                        Samsung</a></li>
+                                    <li class="waves-effect"><a class="menu-list" href="/checkfmi">Kiểm tra tìm iPhone
+                                        (S1)</a></li>
+                                    <li class="waves-effect"><a class="menu-list" href="/checkfmi2">Kiểm tra tìm iPhone
+                                        (S2)</a></li>
+                                    <li class="waves-effect"><a class="menu-list" href="/checklock">Kiểm tra Lock/ Quốc
+                                        tế</a></li>
+                                    <li class="waves-effect"><a class="menu-list" href="detail-blog.html">MEID Sang
+                                        IMEI</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm-3 mb-6">
+                                  <div class="title-mega">Cấu hình SIM</div>
+                                  <img class="thumb-menu" src="./assets/images/saas2/menu_education@2x.jpg"
+                                    alt="thumbnail" />
+                                  <ul>
+                                    <li class="waves-effect"><a class="menu-list" href="/apn">Cấu hình APN</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm-3 mb-6">
+                                  <div class="title-mega">Khác</div>
+                                  <img class="thumb-menu" src="./assets/images/saas2/menu_pos@2x.jpg" alt="thumbnail" />
+                                  <ul>
+                                    <li class="waves-effect"><a class="menu-list" href="/zip-code">Mã Bưu Điện</a></li>
+                                    <li class="waves-effect"><a class="menu-list" href="/trackingJP">Kiểm tra mã vận
+                                        chuyển JP</a></li>
+                                    <li class="waves-effect"><a class="menu-list" href="/hz">Tần số quét màn hình</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <nav class="user-menu">
+                    <a class="btn btn-flat waves-effect show-sm-up" href="login.html">Đăng Nhập</a>
+                    <a class="btn black-white waves-effect show-sm-up" href="register.html">Đăng Ký</a>
+                    <span class="spacer vertical-divider show-lg-up"></span>
+                    <div class="menu-setting">
+                      <div class="setting">
+                        <button class="btn btn-icon waves-effect btn-small dropdown-trigger ma-1"
+                          data-target="dropdown_config" data-align="left" type="button">
+                          <i class="icon material-icons" id="setting_icon">settings</i>
+                        </button>
+                        <div class="dropdown-content setting" id="dropdown_config">
+                          <ul class="collection with-header">
+                            <li class="collection-header">Chủ đề</li>
+                            <li class="collection-item no-hover pl-4">
+                              <div class="flex-menu">
+                                <div class="switch">
+                                  <label>
+                                    Sáng
+                                    <input id="theme_switcher" type="checkbox"><span class="lever"></span>
+                                    Tối
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="dropdown-divider"></div>
+                          <ul class="collection with-header lang-menu" id="lang_menu">
+                            <li class="collection-header">Ngôn ngữ</li>
+                            <li class="collection-item lang-list waves-effect avatar">
+                              <a data-lang="vi" href="#">
+                                <div class="flag circle"><img
+                                    src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="16"></div>
+                                <span class="content lang-opt text-truncate">Tiếng Việt</span>
+                              </a>
+                            </li>
+                            <li class="collection-item lang-list waves-effect avatar">
+                              <a data-lang="en" href="#">
+                                <div class="flag circle"><img
+                                    src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="16"></div>
+                                <span class="content lang-opt text-truncate">English</span>
+                              </a>
+                            </li>
+                            <li class="collection-item lang-list waves-effect avatar">
+                              <a data-lang="ja" href="#">
+                                <div class="flag circle"><img
+                                    src="https://hatscripts.github.io/circle-flags/flags/jp.svg" width="16"></div>
+                                <span class="content lang-opt text-truncate">󠁥󠁮󠁧日本語</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </nav>
+                <div id="container_menu"></div>
+              </div>
+            </div>
+          </header><!-- #### END HEADER ####-->
+
+          <main class="container-wrap">
+            <!-- ##### BANNER #####-->
+            <section id="banner">
+              <div class="banner-slider">
+                <div class="banner-wrap">
+                  <div class="carousel">
+                    <div class="slider" id="banner_slider">
+                      <div class="slide" id="slide1">
+                        <div class="inner">
+                          <div class="img background-banner">
+                            <img src="./assets/images/saas2/background_3d@2x.png" alt="background" />
+                          </div>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6 col-sm-12 px-sm-3 px-0 d-flex align-items-center">
+                                <div class="text">
+                                  <h4 class="use-text-title2">Phát triển kinh doanh của bạn với các giải pháp của chúng
+                                    tôi.</h4>
+                                  <h5 class="use-text-subtitle2 use-text-sans">Chúng tôi cung cấp các giải pháp mạnh mẽ
+                                    và toàn diện để tăng năng suất cho doanh nghiệp của bạn.</h5>
+                                  <div class="btn-area">
+                                    <a class="btn waves-effect btn-outlined btn-large button black-white" href="#">Xem
+                                      thêm</a>
+                                    <a class="btn waves-effect button btn-large black" href="register.html">Bắt đầu</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 px-6">
+                                <div class="img">
+                                  <img class="img-slide1" src="./assets/images/saas2/banner1_3d@2x.png"
+                                    alt="banner 1 3D" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide" id="slide2">
+                        <div class="inner">
+                          <div class="hidden-md-up">
+                            <div class="img background-banner">
+                              <img src="./assets/images/saas2/background_3d@2x.png" alt="background" />
+                            </div>
+                          </div>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6 col-sm-12 px-sm-3 px-0 d-flex align-items-center order-lg-5">
+                                <div class="text">
+                                  <h4 class="use-text-title2">
+                                    Cùng với các công cụ siêu nhanh của chúng tôi</h4>
+                                  <h5 class="use-text-subtitle2 use-text-sans">Chúng tôi giúp khách hàng tăng lượng truy
+                                    cập, thứ hạng và sự hiển thị của họ trên kết quả tìm kiếm trang web</h5>
+                                  <div class="btn-area">
+                                    <a class="btn waves-effect btn-outlined btn-large button black-white" href="#">see
+                                      detail</a>
+                                    <a class="btn waves-effect button btn-large black" href="register.html">Bắt đầu</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 px-6 order-lg-0">
+                                <div class="img"><img class="img-slide2" src="./assets/images/saas2/banner2_3d@2x.png"
+                                    alt="banner 2 3D" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide center-content" id="slide3">
+                        <div class="inner">
+                          <div class="container">
+                            <div class="row justify-content-center">
+                              <div class="col-xs-12 px-sm-12 px-0">
+                                <div class="text text-center">
+                                  <h4 class="use-text-title2">Các công cụ chính</h4>
+                                  <h5 class="use-text-subtitle2">🔒 Kiểm tra giới hạn mạng Nhật Bản</h5>
+                                  <h5 class="use-text-subtitle2"> 📱 Kiểm tra Lock và Quốc tế iPhone</h5>
+                                  <h5 class="use-text-subtitle2"> 🔄 Chuyển đổi MEID (14 số) thành IMEI (15 số)</h5>
+                                  <div class="btn-area">
+                                    <a class="btn waves-effect btn-outlined btn-large button black-white" href="#">see
+                                      detail</a>
+                                    <a class="btn waves-effect button btn-large black" href="register.html">Bắt đầu</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12">
+                                <div class="img h-banner">
+                                  <img src="./assets/images/saas2/banner3_3d@2x.png" alt="banner 3 3D" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-nav-group">
+                    <div class="deco-wrap">
+                      <div class="deco bottom">
+                        <svg class="wave">
+                          <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                            <g transform="translate(0.000000, -725.000000)">
+                              <g>
+                                <g>
+                                  <g transform="translate(-555.178198, 406.382977)">
+                                    <path
+                                      d="M10,311.600689 C87.2870181,401.383056 187.280219,446.273623 309.979602,446.27239 C494.028677,446.270542 495.20336,363.569388 701.676006,378.79436 C908.148653,394.019332 909.216954,439.275608 1087.67363,451.006907 C1166.59583,456.195057 1306.38903,225.111735 1609.17703,337.188584 C1811.0357,411.906484 2069.42811,332.176956 2384.35426,98 L1982.6855,405.180766 L21.2425669,523.595781 L10,311.600689 Z"
+                                      transform="translate(1197.177131, 310.797890) scale(-1, 1) rotate(3.000000) translate(-1197.177131, -310.797890) ">
+                                    </path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="deco top">
+                        <div class="wave wave-cover"></div>
+                      </div>
+                    </div>
+                    <div class="wave wave-cover"></div>
+                    <div class="hidden-sm-down">
+                      <div class="container">
+                        <nav class="slide-nav" id="banner_nav">
+                          <a class="waves-effect active" data-slide="0"><strong class="use-text-sans">Giới
+                              thiệu</strong>Giải pháp dành cho bạn</a>
+                          <hr class="divider">
+                          <a class="waves-effect" data-slide="1"><strong class="use-text-sans">Tốc độ</strong>Các công
+                            cụ luôn tốc độ</a>
+                          <hr class="divider">
+                          <a class="waves-effect" data-slide="2"><strong class="use-text-sans">Công cụ
+                              chính</strong>Danh sách các công cụ thường dùng</a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END BANNER #####-->
+
+            <!-- ##### COMPANY LOGO #####-->
+            <section id="company">
+              <div class="company-logo fixed-width">
+                <div class="root">
+                  <img src="./assets/images/logos/architect.png" alt="logo0" />
+                  <img src="./assets/images/logos/cloud.png" alt="logo1" />
+                  <img src="./assets/images/logos/coin.png" alt="logo2" />
+                  <img src="./assets/images/logos/mobile.png" alt="logo3" />
+                  <img src="./assets/images/logos/profile.png" alt="logo4" />
+                  <img src="./assets/images/logos/saas.png" alt="logo5" />
+                </div>
+              </div>
+            </section><!-- ##### END COMPANY LOGO #####-->
+
+            <!-- ##### COUNTER #####-->
+            <section class="space-top-short">
+              <div class="counter-wrap">
+                <div class="counter-wrap">
+                  <div class="container max-md">
+                    <div class="row counter-inner spacing6 justify-content-center align-items-center">
+                      <div class="col-sm-4 pa-6">
+                        <div class="counter-item">
+                          <div class="text">
+                            <h3 class="use-text-title">
+                              <span class="numscroller" data-min="0" data-max="30" data-delay="5"
+                                data-increment="8"></span>&nbsp; Ngày
+                            </h3>
+                            <p class="use-text-subtitle use-text-sans"><i class="material-icons">reply</i>Miễn phí thử
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 pa-6">
+                        <div class="counter-item">
+                          <div class="text">
+                            <h3 class="use-text-title">
+
+                              +<span class="numscroller" data-min="0" data-max="10" data-delay="5"
+                                data-increment="8"></span>K
+
+                            </h3>
+                            <p class="use-text-subtitle use-text-sans"><i class="material-icons">people</i>Người dùng
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 pa-6">
+                        <div class="counter-item">
+                          <div class="text">
+                            <h3 class="use-text-title">
+
+                              +<span class="numscroller" data-min="0" data-max="220" data-delay="5"
+                                data-increment="8"></span>K
+
+                            </h3>
+                            <p class="use-text-subtitle use-text-sans"><i class="material-icons">layers</i>Lượt truy cập
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END COUNTER #####-->
+
+            <!-- ##### FEATURE #####-->
+            <section id="feature">
+              <div class="root">
+                <div class="decoration-bg">
+                  <svg class="wave">
+                    <g>
+                      <path
+                        d="M19.7665077,0.586224095 C173.454777,201.024442 338.39951,280.899446 514.600709,240.211239 C778.902507,179.178928 866.477805,607.756375 1041.85353,607.756375 C1158.77068,607.756375 1238.15284,586.837583 1280,545 L1274.18697,1225.96189 C1301.0524,1360.78849 1240.86783,1469.11522 1093.63327,1550.94205 C872.781425,1673.68231 547.694716,1115.83347 356.559941,1115.83347 C229.136757,1115.83347 110.418573,1186.39974 0.405387931,1327.53227 L19.7665077,0.586224095 Z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="container mq-lg-up" data-class="fixed-width">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12 px-md-6 px-0 px-lg-12 order-lg-5">
+                        <div class="desc">
+                          <div class="title-main left-title">
+                            <h4 class="use-text-title2">Hành động - Tất cả trong một trang web</h4>
+                          </div>
+                          <h6 class="use-text-subtitle2 use-text-sans text-center text-lg-start">Nền tảng trực quan của
+                            chúng tôi giúp bạn dễ dàng quản lý và sử dụng dịch vụ của chúng tôi.</h6>
+                          <a class="btn black-white btn-large waves-effect" href="/checkimei">Xem chi tiết</a>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12 px-6 px-lg-12 order-lg-0">
+                        <div class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="0.5s"
+                          data-wow-offset="200">
+                          <div class="screen-wrap">
+                            <img class="plant1" src="./assets/images/saas2/plant2_3d@2x.png" alt="plant" />
+                            <div class="illustration">
+                              <figure>
+                                <img src="./assets/images/checkimei.png" alt="check IMEI" />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12 px-md-6 px-0 px-lg-12">
+                        <div class="desc">
+                          <div class="title-main right-title">
+                            <h4 class="use-text-title2">Hành động dựa trên đề xuất giá trị duy nhất</h4>
+                          </div>
+                          <h6 class="use-text-subtitle2 use-text-sans text-lg-end">Công nghệ tiên tiến của chúng tôi
+                            giúp bạn tiết kiệm thời gian, tiền bạc</h6>
+                          <div class="text-center text-lg-end">
+                            <a class="btn black-white btn-large waves-effect" href="/checkfmi">Xem chi tiết</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12 px-6 px-lg-12">
+                        <div class="screen-wrap">
+                          <img class="plant2" src="./assets/images/saas2/plant1_3d@2x.png" alt="plant" />
+                          <div class="row">
+                            <div class="col-6 mt-5">
+                              <div class="wow fadeInRightShort" data-wow-duration="0.5s" data-wow-delay="0.5s"
+                                data-wow-offset="200">
+                                <div class="illustration mx-3">
+                                  <figure>
+                                    <img src="./assets/images/checkfmi.png" alt="Check find my phone" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6 mt-n5">
+                              <div class="wow fadeInRightShort" data-wow-duration="0.5s" data-wow-delay="0.5s"
+                                data-wow-offset="200">
+                                <div class="illustration mx-3">
+                                  <figure>
+                                    <img src="./assets/images/trackingjp.png" alt="tracking JP goods status" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item last">
+                    <div class="title-main center-title">
+                      <h4 class="use-text-title2">Tăng tốc thành doanh nghiệp thông minh</h4>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-md-10 col-sm-12 pa-sm-6">
+                        <h6 class="text-center use-text-sans use-text-subtitle2">Với sự tăng trưởng ngày một nhanh của
+                          các dịch vụ lân cận</h6>
+                        <div class="wow fadeInUpShort" data-wow-offset="10" data-wow-duration="0.5s">
+                          <div class="screen-wrap">
+                            <img class="plant3" src="./assets/images/saas2/plant3_3d@2x.png" alt="plant">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="illustration mx-3 mb-12">
+                                  <figure class="figure graphic">
+                                    <img src="./assets/images/checkimei.png" alt="check IMEI" />
+                                  </figure>
+                                </div>
+                                <div class="illustration mx-3">
+                                  <figure class="figure graphic">
+                                    <img src="./assets/images/trackingjpdetails.png" alt="tracking JP goods status" />
+                                  </figure>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="illustration mx-3">
+                                  <figure class="figure graphic">
+                                    <img src="./assets/images/checkfmi.png" alt="Check find my phone" />
+                                  </figure>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="illustration mx-3 mb-12">
+                                  <figure class="figure graphic">
+                                    <img src="./assets/images/meidtoimei.png" alt="MEID TO IMEI" />
+                                  </figure>
+                                </div>
+                                <div class="illustration mx-3">
+                                  <figure class="figure graphic">
+                                    <img src="./assets/images/apn.png" alt="Cấu hình apn" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END FEATURE #####-->
+
+            <!-- ##### INTEGRATION #####-->
+            <section class="space-top" id="integration">
+              <div class="root">
+                <div class="decoration-bg">
+                  <svg class="wave">
+                    <g stroke="none" fill-rule="evenodd">
+                      <g transform="translate(0.000000, -3316.000000)">
+                        <g transform="translate(-475.000000, 3264.000000)">
+                          <path
+                            d="M67.4921411,142.673287 C304.964489,206.003447 550.435906,187.671032 803.906392,87.6760427 C1184.11212,-62.3164421 1274.85155,309.164945 1566.94254,309.164945 C1761.66987,309.164945 1912.02736,253.667726 2018.01502,142.673287 L2147,819.889356 C2075.7583,891.552432 1917.52672,972.798361 1672.30527,1063.62714 C1304.47311,1199.87032 973.386657,763.892161 655.048725,763.892161 C442.823437,763.892161 224.473862,871.470104 0,1086.62599 L67.4921411,142.673287 Z"
+                            transform="translate(1073.500000, 571.000000) rotate(-180.000000) translate(-1073.500000, -571.000000) ">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="container">
+                  <div class="row spacing6 justify-content-center">
+                    <div class="col-lg-9 col-md-12 py-0 py-sm-6 px-6">
+                      <div class="title-main center-title">
+                        <h4 class="use-text-title2">Tất cả công cụ trong một trang web</h4>
+                      </div>
+                      <h6 class="text-center use-text-subtitle2 use-text-sans">Mang đến sự tiện lợi và hữu ích cho các
+                        doanh nghiệp cũng như cá nhân.</h6>
+                      <div class="list">
+                        <div class="row mb-sm-12">
+                          <div class="col-sm-6 px-sm-6 px-0">
+                            <div class="wow fadeInUpShort" data-wow-offset="-100" data-wow-delay="0.5s"
+                              data-wow-duration="0.5s">
+                              <div class="text-sm-end text-center">
+                                <figure class="illustration left-illustration">
+                                  <img src="./assets/images/saas2/integration1_3d@2x.png" alt="background" />
+                                </figure>
+                                <h3 class="use-text-primary use-text-title2">Tái tạo lại doanh nghiệp của bạn</h3>
+                                <p>Cho dù bạn đang tìm kiếm sức mạnh tính toán, lưu trữ cơ sở dữ liệu, phân phối nội
+                                  dung hay chức năng khác.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 px-sm-6 py-6 px-0">
+                            <div class="wow fadeInUpShort" data-wow-offset="-100" data-wow-delay="0.5s"
+                              data-wow-duration="0.5s">
+                              <div>
+                                <ul class="list-primary">
+                                  <li><i class="material-icons icon">search</i>Tìm kiếm nhanh chóng</li>
+                                  <li><i class="material-icons icon">device_hub</i>Hỗ trợ đa thiết bị</li>
+                                  <li><i class="material-icons icon">layers</i>Thân thiện với người dùng</li>
+                                  <li><i class="material-icons icon">rss_feed</i>Vai trò &amp; Trách nhiệm</li>
+                                  <li><i class="material-icons icon">desktop_mac</i>Không cần cài đặt</li>
+                                  <li><i class="material-icons icon">thumb_up</i>Tốc độ</li>
+                                  <li><i class="material-icons icon">cloud_upload</i>Sử dụng nguồn cloud uy tín</li>
+                                  <li><i class="material-icons icon">build</i>Tìm hiểu, xây dựng &amp; kết nối</li>
+                                  <li><i class="material-icons icon">insert_chart</i>Tối ưu hóa giá trị doanh nghiệp
+                                  </li>
+                                  <li><i class="material-icons icon">supervisor_account</i>Chia sẻ và cộng tác</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 px-sm-6 px-0 order-sm-last">
+                            <div class="wow fadeInUpShort" data-wow-offset="-100" data-wow-delay="0.8s"
+                              data-wow-duration="0.5s">
+                              <div class="text-sm-start text-center">
+                                <figure class="illustration right-illustration">
+                                  <img src="./assets/images/saas2/integration2_3d@2x.png" alt="background" />
+                                </figure>
+                                <h3 class="use-text-secondary use-text-title2">Bắt đầu xây dựng</h3>
+                                <p>Xây dựng một doanh nghiệp bền vững trong thời gian dài không phải là điều dễ dàng. Nó
+                                  đòi hỏi sự sáng tạo lại có thể lặp đi lặp lại nhiều lần.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 px-sm-6 py-6 px-0">
+                            <div class="wow fadeInUpShort" data-wow-offset="-100" data-wow-delay="0.8s"
+                              data-wow-duration="0.5s">
+                              <div>
+                                <ul class="list-secondary">
+                                  <li>Phân tích &amp; Xử lý<i class="material-icons icon">keyboard_hide</i></li>
+                                  <li>Tận hưởng sự tự do truy cập<i class="material-icons icon">device_hub</i></li>
+                                  <li>Tối ưu hóa giá trị doanh nghiệp<i class="material-icons icon">insert_chart</i>
+                                  </li>
+                                  <li>Sử dụng theo yêu cầu<i class="material-icons icon">add_circle</i></li>
+                                  <li>Tái tạo lại bằng dữ liệu<i class="material-icons icon">pie_chart</i></li>
+                                  <li>Chia sẻ và cộng tác<i class="material-icons icon">supervisor_account</i></li>
+                                  <li>Cơ sở hạ tầng thống nhất<i class="material-icons icon">call_merge</i></li>
+                                  <li>Giảm thiểu khối lượng công việc<i class="material-icons icon">sync</i></li>
+                                  <li>Tiếp sức cho sự đổi mới<i class="material-icons icon">thumb_up</i></li>
+                                  <li>Sử dụng nguồn cloud uy tín<i class="material-icons icon">cloud_upload</i></li>
+                                  <li>An toàn cho dữ liệu<i class="material-icons icon">build</i></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END INTEGRATION #####-->
+
+            <!-- ##### TESTIMONIALS #####-->
+            <section class="space-top-short" id="testimonials">
+              <div class="root">
+                <div class="container fixed-width-lg-up">
+                  <div class="title-main center-title">
+                    <h4 class="use-text-title2">Người sáng lập</h4>
+                  </div>
+                  <div class="row spacing6 justify-content-center">
+                    <div class="col-md-10 col-sm-12 my-md-6">
+                      <div class="slider-wrap">
+                        <div class="carousel">
+                          <button class="btn nav prev waves-effect" id="prev_testi"><i
+                              class="ion-ios-arrow-back"></i></button>
+                          <div class="slick-carousel" id="testimonial_carousel">
+                            <div class="item">
+                              <div class="testi-content">
+                                <div class="testimonial-card">
+                                  <div class="card paper">
+                                    <div class="avatar-img avatar">
+                                      <img
+                                        src="https://api.dicebear.com/9.x/avataaars/svg?seed=Molly&amp;backgroundColor=65c9ff,c0aede&amp;mouth=smile&amp;skinColor=ffdbb4,f8d25c"
+                                        alt="avatar" />
+                                    </div>
+                                    <h5 class="use-text-subtitle2">Anh Tuan</h5>
+                                    <p class="caption-name">Owner</p>
+                                    <p class="text">Siêu dễ sử dụng khi đang di chuyển khi bạn không ở gần PC. Hoàn
+                                      thành tốt việc giúp trải nghiệm di động trở nên dễ dàng!</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testi-content">
+                                <div class="testimonial-card">
+                                  <div class="card paper">
+                                    <div class="avatar-img avatar">
+                                      <img
+                                        src="https://api.dicebear.com/9.x/avataaars/svg?seed=Molly&amp;backgroundColor=ffffff,c0aede&amp;mouth=smile&amp;skinColor=ffdbb4,f8d25c"
+                                        alt="avatar" />
+                                    </div>
+                                    <h5 class="use-text-subtitle2">Manh Cuong</h5>
+                                    <p class="caption-name">Web Develope House</p>
+                                    <p class="text">Công cụ cộng tác thực sự tuyệt vời và trực quan đến mức khiến bạn có
+                                      cảm giác như đang tương tác với con người</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="item">
+                              <div class="testi-content">
+                                <div class="testimonial-card">
+                                  <div class="card paper">
+                                    <div class="avatar-img avatar">
+                                      <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Molly&amp;backgroundColor=65c9ff,c0aede&amp;mouth=smile&amp;skinColor=ffdbb4,f8d25c" alt="avatar" />
+                                    </div>
+                                    <h5 class="use-text-subtitle2">Jena Doe</h5>
+                                    <p class="caption-name">Graphic Designer</p>
+                                    <p class="text">Its a great app, makes managing and updateling work on the go very easy. #NoDaysOff.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testi-content">
+                                <div class="testimonial-card">
+                                  <div class="card paper">
+                                    <div class="avatar-img avatar">
+                                      <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Pumpkin&amp;backgroundColor=65c9ff,c0aede&amp;mouth=smile&amp;skinColor=ffdbb4,f8d25c" alt="avatar" />
+                                    </div>
+                                    <h5 class="use-text-subtitle2">Jovelin Doe</h5>
+                                    <p class="caption-name">Senior Graphic Designer</p>
+                                    <p class="text">Great app, can edit alot without having to take out your laptop, or geting too your stationary pc, so that is a big plus.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testi-content">
+                                <div class="testimonial-card">
+                                  <div class="card paper">
+                                    <div class="avatar-img avatar">
+                                      <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Dusty&amp;backgroundColor=65c9ff,c0aede&amp;mouth=smile&amp;skinColor=ffdbb4,f8d25c,d08b5b,ae5d29,edb98a" alt="avatar" />
+                                    </div>
+                                    <h5 class="use-text-subtitle2">Jihan Doe</h5>
+                                    <p class="caption-name">CEO Software House</p>
+                                    <p class="text">Wery useful for task management between team.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testi-content">
+                                <div class="testimonial-card">
+                                  <div class="card paper">
+                                    <div class="avatar-img avatar">
+                                      <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Mimi&amp;backgroundColor=65c9ff,c0aede&amp;mouth=smile" alt="avatar" />
+                                    </div>
+                                    <h5 class="use-text-subtitle2">John Doe</h5>
+                                    <p class="caption-name">Senior Graphic Designer</p>
+                                    <p class="text">The productivity level increases to a great extent with this Mobile Application. Being a PM, having a way to track everything on my mobile phone just makes you even more mobile.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                          <button class="btn nav next waves-effect" id="next_testi"><i
+                              class="ion-ios-arrow-forward"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END TESTIMONIALS #####-->
+
+            <!-- ##### CALL ACTION #####-->
+            <section class="space-top-short" id="call-action">
+              <div class="call-to-action">
+                <div class="container fixed-width">
+                  <div class="root">
+                    <div class="wow fadeInUpShort" data-wow-offset="-100" data-wow-delay="0.5s"
+                      data-wow-duration="0.5s">
+                      <div class="card paper">
+                        <div class="deco"></div>
+                        <h4 class="display-1 mb-10">Còn chần chừ gì nữa?</h4>
+                        <a class="waves-effect btn black button" href="/register">Bắt đầu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END CALL ACTION #####-->
+
+            <!-- ##### BLOG #####-->
+            <section class="space-top space-top-short-xs" id="blog">
+              <div class="root">
+                <div class="carousel">
+                  <div class="slick-carousel" id="news_carousel">
+                    <div>
+                      <div class="item">
+                        <div class="news-event-card">
+                          <figure>
+                            <img src="https://placehold.co/1050x700/3F51B5/FFFFFF/" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">Tin tức</p>
+                              <p>Coming soon</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">Đọc tiếp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-event-card">
+                          <figure>
+                            <img src="https://placehold.co/1050x700/00BCD4/FFFFFF/" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">Tin tức</p>
+                              <p>Coming soon</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">Đọc tiếp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-event-card">
+                          <figure>
+                            <img src="https://placehold.co/1050x700/009688/FFFFFF/" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">Sự kiện</p>
+                              <p>Coming soon</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">Đọc tiếp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-event-card">
+                          <figure>
+                            <img src="https://placehold.co/1050x700/01579B/FFFFFF/" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">Tin tức</p>
+                              <p>Coming soon</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">Đọc tiếp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-event-card">
+                          <figure>
+                            <img src="https://placehold.co/1050x700/0097A7/FFFFFF/" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">Sự kiện</p>
+                              <p>Coming soon</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">Đọc tiếp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-event-card">
+                          <figure>
+                            <img src="https://placehold.co/1050x700/43A047/FFFFFF/" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">Tin tức</p>
+                              <p>Coming soon</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">Đọc tiếp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END BLOG #####-->
+
+          </main>
+          <!-- ##### FOOTER #####-->
+          <div id="footer">
+            <footer class="footer-sitemap">
+              <div class="footer-deco">
+                <div class="deco-wrap">
+                  <div class="deco bottom">
+                    <svg class="wave">
+                      <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                        <g transform="translate(0.000000, -725.000000)">
+                          <g>
+                            <g>
+                              <g transform="translate(-555.178198, 406.382977)">
+                                <path
+                                  d="M10,311.600689 C87.2870181,401.383056 187.280219,446.273623 309.979602,446.27239 C494.028677,446.270542 495.20336,363.569388 701.676006,378.79436 C908.148653,394.019332 909.216954,439.275608 1087.67363,451.006907 C1166.59583,456.195057 1306.38903,225.111735 1609.17703,337.188584 C1811.0357,411.906484 2069.42811,332.176956 2384.35426,98 L1982.6855,405.180766 L21.2425669,523.595781 L10,311.600689 Z"
+                                  transform="translate(1197.177131, 310.797890) scale(-1, 1) rotate(3.000000) translate(-1197.177131, -310.797890) ">
+                                </path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="deco top">
+                    <div class="wave wave-cover"></div>
+                  </div>
+                </div>
+                <div class="wave wave-cover"></div>
+              </div>
+              <div class="container mq-sm-down" data-class="fixed-width">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12 pa-lg-4 logo-area">
+                    <div class="logo">
+                      <span class="logo-main landscape medium"><img src="./assets/images/logo-saas2.png"
+                          alt="logo" />DTCenter</span>
+                    </div>
+                    <p class="body-2">Phát triển kinh doanh của bạn với các giải pháp của chúng tôi.</p>
+                    <p class="body-2 hidden-sm-down">&copy; DTCenter.Net <script>document.write(new Date().getFullYear())</script></p>
+                  </div>
+                  <div class="col-md-6 col-sm-12 pa-4">
+                    <ul class="show-sm-down collapsible">
+                      <li class="accordion-content">
+                        <div class="collapsible-header">
+                          <h6 class="title">Company</h6><i class="material-icons right arrow">expand_more</i>
+                        </div>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="/contact">Contact us</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="accordion-content">
+                        <div class="collapsible-header">
+                          <h6 class="title">Resources</h6><i class="material-icons right arrow">expand_more</i>
+                        </div>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#resource">Resource</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="accordion-content">
+                        <div class="collapsible-header">
+                          <h6 class="title">Legal</h6><i class="material-icons right arrow">expand_more</i>
+                        </div>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#privacy-policy">Privacy policy</a></li>
+                            <li><a href="#terms-of-use">Terms of use</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row show-md-up justify-content-around">
+                      <div class="col pa-4 site-map-item">
+                        <h6 class="title mb-4">Company</h6>
+                        <ul>
+                          <li><a href="/contact">Contact us</a></li>
+                        </ul>
+                      </div>
+                      <div class="col pa-4 site-map-item">
+                        <h6 class="title mb-4">Resources</h6>
+                        <ul>
+                          <li><a href="#resource">Resource</a></li>
+                        </ul>
+                      </div>
+                      <div class="col pa-4 site-map-item">
+                        <h6 class="title mb-4">Legal</h6>
+                        <ul>
+                          <li><a href="#privacy-policy">Privacy policy</a></li>
+                          <li><a href="#terms-of-use">Terms of use</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 pa-4">
+                    <div class="socmed">
+                      <a class="btn btn-icon waves-effect" href="https://www.facebook.com/dtcenter.net"><span
+                          class="ion-social-facebook icon"></span></a>
+                      <!-- <a class="btn btn-icon waves-effect"><span class="ion-social-twitter icon"></span></a>
+                      <a class="btn btn-icon waves-effect"><span class="ion-social-instagram icon"></span></a>
+                      <a class="btn btn-icon waves-effect"><span class="ion-social-linkedin icon"></span></a> -->
+                    </div>
+                    <div class="select-lang select-outlined">
+                      <select class="select" id="lang_select">
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="en" selected>English</option>
+                        <option value="ja">日本語</option>
+                      </select>
+                    </div>
+                    <p class="body-2 mt-5 text-center hidden-md-up">&copy; DTCenter.Net <script>document.write(new Date().getFullYear())</script></p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div><!-- ##### END FOOTER #####-->
+
+          <!-- ##### NOTIFICATIONS #####-->
+          <!-- <div class="hidden-md-down">
+            <div class="notification alert alert-dismissible fade show" role="alert">
+              <div class="wrapper">
+                <div class="content">
+                  <div class="action">Đây là ví dụ về thông báo thường được sử dụng để cung cấp thông tin quan trọng cho
+                    khách truy cập hoặc người dùng. Vui lòng nhấp vào nút bên cạnh để đóng tin nhắn này.</div>
+                  <button class="btn btn-large waves-effect secondary" type="button" data-bs-dismiss="alert"
+                    aria-label="Close">Chấp nhận</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- ##### END NOTIFICATIONS #####-->
+
+          <!-- ##### CORNER #####-->
+          <div class="hidden-md-down">
+            <div class="page-nav" id="page_nav">
+              <nav class="section-nav">
+                <div class="scrollnav">
+                  <ul>
+                    <li style="top: 120px"><a class="tooltipped" href="#feature" data-position="left"
+                        data-tooltip="feature"></a></li>
+                    <li style="top: 90px"><a class="tooltipped" href="#integration" data-position="left"
+                        data-tooltip="integration"></a></li>
+                    <li style="top: 60px"><a class="tooltipped" href="#testimonials" data-position="left"
+                        data-tooltip="testimonials"></a></li>
+                    <li style="top: 30px"><a class="tooltipped" href="#blog" data-position="left"
+                        data-tooltip="blog"></a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="scrollnav"><a class="btn-floating btn-large primary tooltipped waves-effect waves-light"
+                  href="#app" data-position="left" data-tooltip="To Top">
+                  <div class="icon material-icons">arrow_upward</div>
+                </a></div>
+            </div>
+          </div><!-- ##### END CORNER #####-->
+        </div>
+      </div>
+    </div>
+  </div><!-- Scripts-->
+  <!-- Put the 3rd/plugins javascript here-->
+  <script src="./assets/js/vendors/jquery.min.js"></script>
+  <script src="./assets/js/vendors/bootstrap.min.js"></script>
+  <script src="./assets/js/vendors/enquire.min.js"></script>
+  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
+  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
+  <script src="./assets/js/vendors/jquery.magnific-popup.min.js"></script>
+  <script src="./assets/js/vendors/pace.min.js"></script>
+  <script src="./assets/js/vendors/slick.min.js"></script>
+  <script src="./assets/js/vendors/wow.min.js"></script>
+  <script src="./assets/js/vendors/jquery.navScroll.min.js"></script>
+  <!-- This assets are not avalaible in npm.js or it has been costumized-->
+  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="./assets/js/vendors/materialize.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+  <!-- <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
+</body>
+
+</html>

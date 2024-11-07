@@ -1,0 +1,36 @@
+#blog {
+  .root {
+    position: relative;
+    z-index: 56;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .carousel {
+    padding-bottom: $spacing7;
+    .slick-dots {
+      bottom: $spacing7 * -1;
+      li {
+        width: 15px;
+        height: 10px;
+        border: 1px solid;
+        @include use-theme(border-color, $palette-common-black, $palette-common-white);
+        border-radius: 15px;
+        opacity: 1;
+        transition: all 0.5s ease-out;
+        &.slick-active {
+          @include use-theme(background, $palette-common-black, $palette-common-white);
+          @include use-theme(border-color, $palette-common-black, $palette-common-white);
+          width: 30px;
+        }
+      }
+      li button:before {
+        display: none
+      }
+    }
+  }
+
+  .item {
+    padding: $spacing1
+  }
+}

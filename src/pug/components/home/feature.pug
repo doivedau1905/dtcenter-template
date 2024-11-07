@@ -1,0 +1,164 @@
+include ../titles/title.pug
+
+.root
+  .decoration-bg
+    |
+    |
+    svg.wave
+      include ../svg/deco-bg.pug
+    |
+    |
+  .container.mq-lg-up(data-class="fixed-width")
+    .item
+      .row
+        .col-md-6.col-sm-12.px-md-6.px-0.px-lg-12.order-lg-5
+          .desc
+            +title-main("left")
+              | #{$t.saas2_landing.feature_title1} #{$t.saas2_landing.feature_titlestrong1}
+            h6.use-text-subtitle2.use-text-sans.text-center.text-lg-start
+              | #{$t.saas2_landing.feature_desc1}
+            |
+            |
+            a.btn.black-white.btn-large.waves-effect(href="#")
+              | #{$t.saas2_landing.see_detail}
+            |
+            |
+        .col-md-6.col-sm-12.px-6.px-lg-12.order-lg-0
+          .wow.fadeInLeftShort(data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="200")
+            .screen-wrap
+              |
+              |
+              img.plant1(
+                src=img_assets+img_artwork[12]
+                alt='plant'
+              )/
+              |
+              |
+              .illustration
+                figure
+                  |
+                  |
+                  img(
+                    src=img_artwork[19]
+                    alt="screen"
+                  )/
+                  |
+                  |
+    .item
+      .row
+        .col-md-6.col-sm-12.px-md-6.px-0.px-lg-12
+          .desc
+            +title-main("right")
+              | #{$t.saas2_landing.feature_title1} #{$t.saas2_landing.feature_titlestrong2}
+            h6.use-text-subtitle2.use-text-sans.text-lg-end #{$t.saas2_landing.feature_desc2}
+            .text-center.text-lg-end
+              |
+              |
+              a.btn.black-white.btn-large.waves-effect(href="#") #{$t.saas2_landing.see_detail}
+              |
+              |
+        .col-md-6.col-sm-12.px-6.px-lg-12
+          .screen-wrap
+            |
+            |
+            img.plant2(
+              src=img_assets+img_artwork[10]
+              alt='plant'
+            )/
+            |
+            |
+            .row
+              .col-6.mt-5
+                .wow.fadeInRightShort(data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="200")
+                  .illustration.mx-3
+                    figure
+                      |
+                      |
+                      img(
+                        src=img_artwork[22]
+                        alt="screen"
+                      )/
+                      |
+                      |
+              .col-6.mt-n5
+                .wow.fadeInRightShort(data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="200")
+                  .illustration.mx-3
+                    figure
+                      |
+                      |
+                      img(
+                        src=img_artwork[23]
+                        alt="screen"
+                      )/
+                      |
+                      |
+    .item.last
+      +title-main("center")
+        | #{$t.saas2_landing.feature_title3} #{$t.saas2_landing.feature_titlestrong3}
+      .row.justify-content-center
+        .col-md-10.col-sm-12.pa-sm-6
+          h6.text-center.use-text-sans.use-text-subtitle2 #{$t.saas2_landing.feature_desc3}
+          .wow.fadeInUpShort(data-wow-offset="10" data-wow-duration="0.5s")
+            .screen-wrap
+              |
+              |
+              img.plant3(
+                src=img_assets+img_artwork[14]
+                alt='plant'
+              )
+              |
+              |
+              .row
+                .col-4
+                  .illustration.mx-3.mb-12
+                    figure.figure.graphic
+                      |
+                      |
+                      img(
+                        src=img_artwork[25]
+                        alt="screen"
+                      )/
+                      |
+                      |
+                  .illustration.mx-3
+                    figure.figure.graphic
+                      |
+                      |
+                      img(
+                        src=img_artwork[26]
+                        alt="screen"
+                      )/
+                      |
+                      |
+                .col-4
+                  .illustration.mx-3
+                    figure.figure.graphic
+                      |
+                      |
+                      img(
+                        src=img_artwork[24]
+                        alt="screen"
+                      )/
+                      |
+                      |
+                .col-4
+                  .illustration.mx-3.mb-12
+                    figure.figure.graphic
+                      |
+                      |
+                      img(
+                        src=img_artwork[27]
+                        alt="screen"
+                      )/
+                      |
+                      |
+                  .illustration.mx-3
+                    figure.figure.graphic
+                      |
+                      |
+                      img(
+                        src=img_artwork[28]
+                        alt="screen"
+                      )/
+                      |
+                      |
